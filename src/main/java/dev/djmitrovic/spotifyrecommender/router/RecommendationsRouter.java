@@ -6,7 +6,7 @@ import org.springframework.web.reactive.function.server.RouterFunction;
 
 @Configuration
 public class RecommendationsRouter {
-    @Bean
-    public RouterFunction<?> routeRecommendation()
+//    @Bean
+//    public RouterFunction<?> routeRecommendation(){}
 
 }

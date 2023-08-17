@@ -1,0 +1,28 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          spotify:
+            authorization-grant-type: authorization_code
+            client-id: 06eeeab4bd3f483d8fa584cd329cbef9
+            client-secret: be39941fb06f48b1a4c88241fb8c6354
+            user-info-authentication-method: form
+            redirect-uri: http://localhost:8080/login/oauth2/code/spotify
+        provider:
+          spotify:
+            token-uri: https://accounts.spotify.com/api/token
+            authorization-uri: https://accounts.spotify.com/authorize
+            user-info-uri: https://api.spotify.com/v1/me
+            user-name-attribute: id
+
+
+
+    user:
+      password: pass
+
+logging:
+  level:
+    org:
+      springframework:
+        security: trace
